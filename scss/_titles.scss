@@ -1,0 +1,235 @@
+h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 112%; /* 47.04px */
+  letter-spacing: -1px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 112%; /* 44.8px */
+  letter-spacing: -1px;
+}
+
+h3 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 112%; /* 35.84px */
+  letter-spacing: -1px;
+}
+
+.title-style-1 {
+  color: $bg-primary;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 120%; /* 33.6px */
+  letter-spacing: -1px;
+}
+
+.title-style-vantagens {
+  color: #00292e;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.75px;
+}
+
+.title-vagas-trabalho {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+}
+
+.title-requisitos {
+  color: #00292e;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.title-nome-vaga {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.span-subtitulo {
+  color: #158f44;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.span-subtitulo-2 {
+  color: #17aa61;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.span-subtitulo-3 {
+  color: $color-green;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.span-titulos {
+  color: $green-dark-two;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 112%;
+  letter-spacing: -1px;
+}
+.span-titulos-2 {
+  color: $color-green;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 112%;
+  letter-spacing: -1px;
+}
+
+.span-maps {
+  color: #17aa61;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.span-vagas {
+  color: #7e818a;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.span-vagas-2 {
+  color: #7e818a;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.span-detalhes-vaga {
+  color: #00292e;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-top: 1.8rem;
+}
+
+p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 160%;
+}
+
+.text-02 {
+  color: #212121;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 160%; /* 21.6px */
+}
+
+.text-box-contato {
+  color: $bg-primary;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.text-box-vantagens {
+  color: #212121;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 160%; /* 16.8px */
+}
+
+.text-box-segmentos {
+  color: #7e818a;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%; /* 19.2px */
+  letter-spacing: -0.5px;
+}
+
+.texto-vagas-topo {
+  color: #7e818a;
+  font-weight: 300;
+}
+
+.text-requisitos {
+  color: #00292e;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.span-box-contato {
+  color: $text-gray;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+//Footer
+.titles-footer {
+  color: $color-complementar-principal;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.link-footer {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%;
+  &.link-maps {
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: $color-complementar-principal;
+    }
+  }
+}
+
+.link-botao-contato {
+  width: 100%;
+  max-width: 19rem;
+  transition: all 0.6s ease;
+  &:hover {
+    max-width: 22rem;
+  }
+}

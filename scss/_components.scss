@@ -1,0 +1,1046 @@
+.s-entre-contato {
+  background-color: $color-complementar-principal;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+    .text-entre-contato {
+      width: 100%;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 112%; /* 26.88px */
+      .span-text-primary {
+        color: $bg-primary;
+      }
+    }
+    .botoes-contato {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 31px;
+    }
+  }
+
+  @include responsive(600px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      .text-entre-contato {
+        margin-bottom: 3rem;
+      }
+      .botoes-contato {
+        justify-content: center;
+      }
+    }
+  }
+  @include responsive(420px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      .text-entre-contato {
+        font-size: 20px;
+      }
+      .botoes-contato {
+        gap: 15px;
+        .btn-trabalhe-conosco {
+          max-width: 100%;
+          padding: 15px;
+          p {
+            max-width: 100%;
+            font-size: 13px;
+            margin-right: 5px;
+          }
+        }
+        .btn-fale-conosco {
+          max-width: 100%;
+          padding: 15px;
+          p {
+            max-width: 100%;
+            font-size: 13px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.s-sustentabilidade {
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: url(./img/bg-sustentabilidade.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      width: 100%;
+      max-width: 51%;
+      h3 {
+        margin-top: 1.2rem;
+        margin-bottom: 2.4rem;
+      }
+      p {
+        margin-bottom: 2.4rem;
+      }
+      .span-title {
+        color: $color-green;
+      }
+    }
+  }
+
+  @include responsive(1150px) {
+    .container {
+      .text {
+        .span-subtitulo {
+          font-size: 12px;
+        }
+        h3 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  @include responsive(900px) {
+    .container {
+      .text {
+        max-width: 60%;
+        h3 {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+  @include responsive(800px) {
+    .container {
+      .text {
+        text-align: center;
+        max-width: 100%;
+        align-items: center;
+        h3 {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+.s-unidades {
+  padding-top: 9.3rem;
+  padding-bottom: 9.3rem;
+  overflow: hidden;
+  .container {
+    display: flex;
+    .left {
+      width: 100%;
+      max-width: 36.6%;
+      h3 {
+        color: $bg-primary;
+        margin-bottom: 2.9rem;
+        margin-top: 4rem;
+      }
+      .span-text-black {
+        font-weight: 600;
+      }
+    }
+    .right {
+      width: 100%;
+      max-width: 63%;
+      padding-top: 3.5rem;
+      .swiper {
+        .swiper-wrapper {
+          width: 100%;
+          display: flex;
+          margin-bottom: 5rem;
+          margin-left: 2rem;
+          .swiper-slide {
+            width: 100%;
+          }
+        }
+      }
+      .bottom {
+        width: 100%;
+        padding-left: 2rem;
+        .infos-cidade {
+          padding-bottom: 1rem;
+          animation: Spawn 1s ease forwards;
+          .content {
+            display: flex;
+            align-items: end;
+            gap: 4rem;
+            .image {
+              width: 100%;
+              max-width: 34.1rem;
+              height: 27.2rem;
+              border-radius: 10px;
+              background: #d9d9d9;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .infos {
+              h3 {
+                color: $green-dark;
+                margin-top: 6px;
+                margin-bottom: 2.5rem;
+              }
+              p {
+                margin-bottom: 5px;
+              }
+              .link-maps {
+                display: flex;
+                align-items: center;
+                gap: 9px;
+                margin-top: 1.9rem;
+                i {
+                  font-size: 1.8rem;
+                }
+              }
+            }
+          }
+          &.camargo {
+            display: none;
+          }
+          &.cascavel {
+            display: none;
+          }
+
+          &.general {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(1130px) {
+    .container {
+      .left {
+        .subtitulo {
+          .span-subtitulo-2 {
+            font-size: 14px;
+          }
+        }
+        h3 {
+          font-size: 28px;
+        }
+        .text-02 {
+          font-size: 16px;
+        }
+      }
+      .right {
+        .navegacao {
+          li {
+            .btn-cidades {
+              max-width: 15.6rem;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(1000px) {
+    .container {
+      flex-direction: column;
+      .left {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 5rem;
+        h3 {
+          font-size: 30px;
+        }
+      }
+      .right {
+        max-width: 100%;
+        .navegacao {
+          li {
+            .btn-cidades {
+              max-width: 90.6%;
+            }
+          }
+        }
+        .bottom {
+          .infos-cidade {
+            .content {
+              .image {
+                max-width: 50.1%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(600px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .container {
+      .left {
+        text-align: center;
+        margin-bottom: 1.6rem;
+        .subtitulo {
+          justify-content: center;
+        }
+      }
+      .right {
+        .navegacao {
+          row-gap: 1rem;
+          flex-wrap: wrap;
+          justify-content: start;
+          li {
+            max-width: 30%;
+            .btn-cidades {
+              font-size: 12px;
+            }
+          }
+        }
+        .bottom {
+          .infos-cidade {
+            .content {
+              .image {
+                max-width: 45.1%;
+                height: 22.2rem;
+              }
+              .infos {
+                .span-subtitulo-2 {
+                  font-size: 12px;
+                }
+                h3 {
+                  font-size: 25px;
+                  margin-bottom: 1.5rem;
+                }
+                .text-02 {
+                  font-size: 16px;
+                }
+                .span-maps {
+                  margin-top: 1rem;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(500px) {
+    .container {
+      .left {
+        .subtitulo {
+          .linha {
+            display: none;
+          }
+        }
+      }
+      .right {
+        max-width: 100%;
+        .bottom {
+          padding-left: 0rem;
+          .infos-cidade {
+            .content {
+              flex-direction: column-reverse;
+              align-items: center;
+              text-align: center;
+              .image {
+                max-width: 100%;
+              }
+              .infos {
+                .link-maps {
+                  justify-content: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(400px) {
+    .container {
+      .right {
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+              .btn-cidades {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Section-Hero
+.arrow {
+  width: 100%;
+  max-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid #17d460;
+  border-radius: 100%;
+  i {
+    font-size: 1.9rem;
+  }
+  @include responsive(600px) {
+    display: none;
+  }
+}
+
+.right {
+  .content {
+    .redes-sociais {
+      width: 100%;
+      max-width: 13%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 16px;
+      .icone-redes-sociais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 5rem;
+        height: 5rem;
+        background-color: #fff;
+        border-radius: 8px;
+        i {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+.icone-green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 4.1rem;
+  height: 3.7rem;
+  background-color: $color-green;
+  position: absolute;
+  border-radius: 8px;
+  top: 11rem;
+  left: 49rem;
+  z-index: 0;
+  animation: float 6s ease-in-out infinite;
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 100%;
+  }
+}
+.icon-ecologico {
+  width: 100%;
+  max-width: 15.6rem;
+  height: 3.7rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: inherit;
+  animation: float-two 3s ease-in-out infinite;
+  margin-left: 5rem;
+  margin-top: -10rem;
+  i {
+    font-size: 15px;
+  }
+  p {
+    color: $color-green;
+    font-size: 11px;
+    font-weight: 500;
+  }
+}
+//
+
+// Section-Sobre-Nos
+.logo-girando {
+  width: 100%;
+  max-width: 13.5rem;
+  height: 13.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -7rem;
+  .text-circle {
+    position: absolute;
+    animation: girar 8s infinite linear;
+  }
+  .logo {
+    position: absolute;
+    width: 100%;
+    max-width: 8.5rem;
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 8.5rem;
+      height: 8.5rem;
+      border-radius: 100%;
+      background-color: #fff;
+    }
+  }
+}
+//
+
+// Section-Nossos-Produtos
+.box-fsc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  max-width: 13rem;
+  height: 14.6rem;
+  background-color: #fff;
+  border-radius: 1.6rem;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.2);
+  padding-top: 1.9rem;
+  padding-bottom: 2.1rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  top: 41%;
+  left: 58%;
+  animation: float-three 5s ease-in-out infinite;
+  .icone-fsc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 4.9rem;
+    height: 4.9rem;
+    border-radius: 100%;
+    background-color: $color-green;
+    margin-bottom: 1.2rem;
+  }
+  .bottom {
+    padding-bottom: 2.2rem;
+    p {
+      color: $bg-primary;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 120%;
+    }
+    :after {
+      content: "";
+      display: block;
+      width: 100%;
+      max-width: 5rem;
+      height: 2px;
+      background-color: $color-green;
+      border-radius: 3px;
+      position: absolute;
+      left: 30%;
+      top: 85%;
+    }
+  }
+}
+//
+
+// Section-Certificacoes
+.box-fsc-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 21.6rem;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.2);
+  padding-top: 3.2rem;
+  padding-bottom: 3.8rem;
+  margin-top: -7rem;
+  .green-ball {
+    width: 100%;
+    max-width: 17rem;
+    height: 17rem;
+    background-color: $color-green;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+//
+
+.lista-de-garantias {
+  width: 100%;
+  max-width: 45rem;
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+  gap: 3rem;
+  .icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 100%;
+    border: 1px solid #17d460;
+    background-color: transparent;
+    img {
+      width: 100%;
+      max-width: 2.4rem;
+    }
+  }
+  .txt {
+    .title-green {
+      color: $green-dark-two;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    p {
+      color: #212121;
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  @include responsive(750px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  @include responsive(500px) {
+    margin-left: -5px;
+  }
+}
+
+.lista-de-atencao-2 {
+  width: 100%;
+  max-width: 45rem;
+  display: flex;
+  gap: 3rem;
+  .icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 100%;
+    border: 1px solid #d80027;
+    background-color: transparent;
+    img {
+      width: 100%;
+      max-width: 8px;
+    }
+  }
+  .txt {
+    .title-green {
+      color: #d80027;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    p {
+      color: #525b67;
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  @include responsive(750px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  @include responsive(500px) {
+    margin-left: -5px;
+  }
+}
+
+.lista-de-atencao {
+  width: 100%;
+  max-width: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -21px;
+  .icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 100%;
+    background-color: #d80027;
+    overflow: hidden;
+    img {
+      width: 100%;
+      max-width: 6px;
+    }
+  }
+  .txt {
+    .title-green {
+      color: #d80027;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    p {
+      color: #525b67;
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  @include responsive(500px) {
+    margin-left: -5px;
+  }
+}
+
+.s-slides-logos {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  .container {
+    display: flex;
+    align-items: center;
+    .title-slides {
+      padding-right: 3rem;
+      position: relative;
+      h4 {
+        color: $color-green;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      span {
+        font-weight: 600;
+      }
+      :after {
+        content: "";
+        display: block;
+        width: 100%;
+        max-width: 1px;
+        height: 25px;
+        left: 13rem;
+        top: 5px;
+        background-color: #17d46038;
+        position: absolute;
+      }
+    }
+    .logosSwiper {
+      width: 100%;
+      padding-left: 5rem;
+      .swiper-wrapper {
+        display: flex;
+        align-items: center;
+        -webkit-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+        position: relative;
+        .swiper-slide {
+          width: 100%;
+          padding: 0 2.6rem;
+        }
+      }
+    }
+  }
+
+  @include responsive(600px) {
+    .container {
+      flex-direction: column;
+      align-items: start;
+      .title-slides {
+        margin-bottom: 3rem;
+        padding-right: 0rem;
+        width: 100%;
+        text-align: center;
+        :after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.subtitulo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  .linha {
+    width: 100%;
+    max-width: 72px;
+    height: 1px;
+    background: $green-dark-two;
+  }
+  @include responsive(700px) {
+    gap: 1.6rem;
+    flex-direction: column;
+    .linha {
+      display: none;
+    }
+  }
+}
+
+//Formulario de Contato//
+
+.formulario {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-top: 12rem;
+  form {
+    width: 100%;
+    max-width: 100%;
+    .column {
+      width: 100%;
+      max-width: 55.2rem;
+      border: 1px solid $text-gray;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      margin-bottom: 2.6rem;
+      border-radius: 24px;
+      input {
+        font-size: 16px;
+        color: $text-gray;
+        font-family: Inter;
+        font-weight: 500;
+        line-height: 120%; /* 19.2px */
+      }
+      select {
+        font-size: 16px;
+        color: #7e818a;
+        font-family: Inter;
+        font-weight: 500;
+        line-height: 120%;
+      }
+    }
+
+    .btn-formulario {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $bg-primary;
+      width: 48.7rem;
+      height: 5.6rem;
+      color: #fff;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 21.6px */
+      transition: all 0.5s ease-in;
+      border-radius: 24px;
+      cursor: pointer;
+      &:hover {
+        background: $green-dark-two;
+      }
+      p {
+        width: 100%;
+        height: 100%;
+      }
+      input {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 120%; /* 21.6px */
+        background: transparent;
+        cursor: pointer;
+      }
+      span {
+        display: none;
+      }
+    }
+    textarea {
+      width: 100%;
+      max-width: 48.7rem;
+      height: 18.9rem;
+      border: 1px solid $text-gray;
+      font-size: 16px;
+      color: $text-gray;
+      font-family: Inter;
+      font-weight: 500;
+      line-height: 120%; /* 19.2px */
+      padding-top: 1.4rem;
+      padding-left: 2rem;
+      margin-bottom: 1.4rem;
+      border-radius: 24px;
+    }
+  }
+
+  @include responsive(930px) {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      .column {
+        max-width: 38.2rem;
+        input {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+      textarea {
+        max-width: 38.2rem;
+        font-size: 13px;
+      }
+      .btn-formulario {
+        width: 38.2rem;
+        input {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @include responsive(750px) {
+    padding-top: 6rem;
+    form {
+      .column {
+        max-width: 32.2rem;
+      }
+      textarea {
+        max-width: 32.2rem;
+      }
+      .btn-formulario {
+        max-width: 32.2rem;
+      }
+    }
+  }
+  @include responsive(650px) {
+    justify-content: center;
+    #wpcf7-f15-p11-o1 {
+      width: 100%;
+    }
+    form {
+      align-items: center;
+      .column {
+        max-width: 100%;
+      }
+      textarea {
+        max-width: 100%;
+      }
+      .btn-formulario {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+/*////////////*/
+
+.s-vaga-interna {
+  width: 100%;
+  padding-bottom: 6rem;
+  padding-top: 13rem;
+  background-color: $bg-primary;
+  .container {
+    .text {
+      .span-vaga-interna {
+        color: #fff;
+      }
+      h2 {
+        color: $color-green;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+      h4 {
+        display: none;
+      }
+    }
+  }
+  @include responsive(550px) {
+    padding-top: 10rem;
+    .container {
+      .text {
+        h2 {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+  @include responsive(430px) {
+    .container {
+      .text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-size: 30px;
+        }
+        font-size: 28px;
+      }
+    }
+  }
+  @include responsive(350px) {
+    .container {
+      .text {
+        h2 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+.formulario-vaga {
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+  .container {
+    h2 {
+      color: #000;
+      font-size: 35px;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    h3 {
+      color: #000;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    p {
+      color: #000;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.oculto {
+  display: none;
+}
